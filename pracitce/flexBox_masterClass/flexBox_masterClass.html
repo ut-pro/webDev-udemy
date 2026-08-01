@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Master Class</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        color: #1a1a1a;
+        padding: 40px;
+        background-color: #fffaf3;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+      }
+
+      .container {
+        padding: 20px;
+        height: 400px;
+        margin-bottom: 30px;
+        border: 2px solid black;
+      }
+
+      .container h2 {
+        margin-bottom: 20px;
+      }
+
+      .boxContainer {
+        display: flex;
+      }
+
+      .boxes {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        color: #fffaf3;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+
+      .boxes:hover {
+        cursor: crosshair;
+        transform: translate(2px, -5%);
+        box-shadow: -2px 2px 5px #1a1a1a90;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Master Class (Live)</h1>
+    <div class="container">
+      <h2>1. Default flex direction (row)</h2>
+      <div class="boxContainer">
+        <div class="boxes" style="background-color: #78a4cb">1</div>
+        <div class="boxes" style="background-color: #ff80c7">2</div>
+        <div class="boxes" style="background-color: #d46d25">3</div>
+        <div class="boxes" style="background-color: #f62440">4</div>
+        <div class="boxes" style="background-color: #468432">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>2. flex-direction: column</h2>
+      <div class="boxContainer" style="flex-direction: column">
+        <div class="boxes" style="background-color: #78a4cb">1</div>
+        <div class="boxes" style="background-color: #ff80c7">2</div>
+        <div class="boxes" style="background-color: #d46d25">3</div>
+        <div class="boxes" style="background-color: #f62440">4</div>
+        <div class="boxes" style="background-color: #468432">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>3. justify-content: space around</h2>
+      <div class="boxContainer" style="justify-content: space-around">
+        <div class="boxes" style="background-color: #78a4cb">1</div>
+        <div class="boxes" style="background-color: #ff80c7">2</div>
+        <div class="boxes" style="background-color: #d46d25">3</div>
+        <div class="boxes" style="background-color: #f62440">4</div>
+        <div class="boxes" style="background-color: #468432">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>4. align-items: center</h2>
+      <div class="boxContainer" style="height: 300px; align-items: center">
+        <div class="boxes" style="background-color: #78a4cb">1</div>
+        <div class="boxes" style="background-color: #ff80c7">2</div>
+        <div class="boxes" style="background-color: #d46d25">3</div>
+        <div class="boxes" style="background-color: #f62440">4</div>
+        <div class="boxes" style="background-color: #468432">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>5. flex-wrap: wrap</h2>
+      <div class="boxContainer" style="flex-wrap: wrap">
+        <div class="boxes" style="background-color: #78a4cb">1</div>
+        <div class="boxes" style="background-color: #ff80c7">2</div>
+        <div class="boxes" style="background-color: #d46d25">3</div>
+        <div class="boxes" style="background-color: #f62440">4</div>
+        <div class="boxes" style="background-color: #468432">5</div>
+        <div class="boxes" style="background-color: #78a4cb">6</div>
+        <div class="boxes" style="background-color: #ff80c7">7</div>
+        <div class="boxes" style="background-color: #d46d25">8</div>
+        <div class="boxes" style="background-color: #f62440">9</div>
+        <div class="boxes" style="background-color: #468432">10</div>
+      </div>
+    </div>
+  </body>
+</html>
