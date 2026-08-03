@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-card</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="invoice-container">
+        <div class="head-part">
+          <div class="outlet"></div>
+        </div>
+        <div class="trip-invoice">
+          <h3 class="invoice-name">Trip Invoice — Japan Summer 2026</h3>
+          <div class="pricing">
+            <div class="total">
+              <p class="text">Total</p>
+              <p class="numbers">$30,000</p>
+            </div>
+            <div class="perPerson">
+              <p class="text">Per Person</p>
+              <p class="numbers">$6,000</p>
+            </div>
+          </div>
+          <div class="people-details">
+            <div class="person">
+              <img src="./assets/you.png" alt="you" class="avtar" />
+              <div class="details">
+                <p class="name">You</p>
+                <div class="status">
+                  <img
+                    src="./assets/circle-tick.png"
+                    alt="tick"
+                    class="status-emoji"
+                  />
+                  <p>Paid</p>
+                </div>
+              </div>
+            </div>
+            <div class="person">
+              <img src="./assets/prateek.png" alt="prateek" class="avtar" />
+              <div class="details">
+                <p class="name">Prateek</p>
+                <div class="status">
+                  <img
+                    src="./assets/circle-tick.png"
+                    alt="tick"
+                    class="status-emoji"
+                  />
+                  <p>Paid</p>
+                </div>
+              </div>
+            </div>
+            <div class="person">
+              <img src="./assets/ritik.png" alt="ritik" class="avtar" />
+              <div class="details">
+                <p class="name">Ritik</p>
+                <div class="status">
+                  <img
+                    src="./assets/circle-tick.png"
+                    alt="tick"
+                    class="status-emoji"
+                  />
+                  <p>Paid</p>
+                </div>
+              </div>
+            </div>
+            <div class="person">
+              <img src="./assets/rohit.png" alt="rohit" class="avtar" />
+              <div class="details">
+                <p class="name">Rohit</p>
+                <div class="status">
+                  <img
+                    src="./assets/circle-waiting.png"
+                    alt="tick"
+                    class="status-emoji"
+                  />
+                  <p>Unpaid</p>
+                </div>
+              </div>
+            </div>
+            <div class="person">
+              <img src="./assets/sachin.png" alt="sachin" class="avtar" />
+              <div class="details">
+                <p class="name">Sachin</p>
+                <div class="status">
+                  <img
+                    src="./assets/circle-waiting.png"
+                    alt="tick"
+                    class="status-emoji"
+                  />
+                  <p>Unpaid</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-status">
+            <div class="status-head">
+              <p class="status-heading">Payment Status</p>
+              <p class="final-status">Unpaid</p>
+            </div>
+            <div class="status-tracker">
+              <progress value="72" max="100"></progress>
+
+              <div class="node completed">
+                <img src="./assets/circle-tick.png" alt="tick" />
+              </div>
+              <div class="node completed">
+                <img src="./assets/circle-tick.png" alt="tick" />
+              </div>
+              <div class="node completed">
+                <img src="./assets/circle-tick.png" alt="tick" />
+              </div>
+              <div class="node active">
+                <img src="./assets/black-dot.png" alt="black-dot" />
+              </div>
+              <div class="node pending">
+                <img src="./assets/stamp.png" alt="stamp" />
+              </div>
+            </div>
+          </div>
+          <div class="actions-options">
+            <button>Send Reminder</button>
+            <button>Download Invoice</button>
+          </div>
+        </div>
+      </div>
+      <div class="foot-part">
+        <div class="payment-method">
+          <p>Payment Method</p>
+          <div class="method-detail">
+            <p>Visa Ending 2986</p>
+            <div class="card-color"></div>
+          </div>
+        </div>
+        <button class="pay-now">Pay Now</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  min-width: 460px;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.invoice-container {
+  height: 660px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.head-part {
+  width: 100%;
+  height: 130px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 20px;
+}
+
+.outlet {
+  width: 100%;
+  height: 25px;
+  background-color: #000000;
+  border-radius: 50px;
+}
+
+.trip-invoice {
+  width: 400px;
+  padding: 15px;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  position: absolute;
+  background-color: #fff;
+  top: 30px;
+  box-shadow:
+    rgba(0, 0, 0, 0.24) 0px 3px 8px,
+    #000000 0px 50px 32px -38px inset;
+}
+
+.invoice-name {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+}
+
+.pricing {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.total,
+.perPerson {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: rgb(93, 92, 92);
+  font-weight: 500;
+}
+
+.numbers {
+  font-weight: 700;
+}
+
+.people-details {
+  color: rgb(93, 92, 92);
+  padding: 20px 10px 10px 10px;
+  border-top: 2px solid rgba(194, 193, 193, 0.509);
+}
+
+.person {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(194, 193, 193, 0.509);
+}
+
+.avtar {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-right: 2px solid rgba(194, 193, 193, 0.509);
+}
+
+.details {
+  width: 85%;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 5px;
+  border: 2px solid rgba(179, 177, 177, 0.617);
+  border-radius: 8px;
+}
+
+.status-emoji {
+  width: 15px;
+  height: 15px;
+}
+
+.payment-status {
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid rgba(179, 177, 177, 0.617);
+  border-radius: 10px;
+}
+
+.status-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-heading {
+  color: rgb(93, 92, 92);
+}
+
+.final-status {
+  text-transform: uppercase;
+}
+
+.status-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 18px;
+}
+
+progress {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  appearance: none;
+  z-index: 1;
+}
+
+.node {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.node img {
+  width: 15px;
+  height: 15px;
+}
+
+.completed {
+  background-color: #fff;
+  color: white;
+}
+
+.active {
+  background-color: #fff;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.pending {
+  background-color: white;
+  color: #000000;
+  border: 1px solid #e0e0e0;
+}
+
+.actions-options {
+  padding: 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions-options button {
+  border: none;
+  padding: 8px 28px;
+  color: #000000;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button:nth-child(1) {
+  color: #fff;
+  background-color: #000000;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.foot-part {
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid rgba(179, 177, 177, 0.617);
+}
+
+.payment-method {
+  width: 100%;
+  color: rgb(93, 92, 92);
+  margin-top: 10px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.method-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-color {
+  width: 35px;
+  height: 25px;
+  background-color: #1a43bf;
+  border-radius: 5px;
+}
+
+.pay-now {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #000000;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
